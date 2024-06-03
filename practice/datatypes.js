@@ -35,12 +35,12 @@ typeof(accountemail);  // use to know the type of variable.
 // "" = NaN
 
 
-let score= "jjj"
-console.log(typeof(score)) 
+// let score= true;
+// console.log(typeof(score)) 
 
-let value= Boolean(score)
-console.log(typeof(value)) 
-console.log(value)
+// let value= Number(score)
+// console.log(typeof(value)) 
+// console.log(value)
 
 
 //1= true
@@ -51,6 +51,33 @@ console.log(value)
 
 // we can also convert in string by using String keyword.
 
+
+//****************operations******************
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**2);  // 2^2
+// console.log(2/2);
+// console.log(2%2);
+
+// let str1="Dev"
+// let str2=" jaiswal"
+
+// console.log(str1+str2);
+
+// console.log("1"+2);
+// console.log(1+ "2");
+// console.log(1+2+"3");  //number is priority.
+// console.log("1"+2+3);  //string is priority.
+
+// console.log(3+4*5%4); //try to don't mess with code with this type of stuff. use prenthesis properly. this written statement is not wrong but companies want clear& clean and readable code so.
+
+
+// console.log(+true);  // this is tricky conversion to Number. generally we are not using this.
+// console.log(+"");
+
+// prefix and postfix done with mdn.
 
 
 
