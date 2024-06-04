@@ -51,7 +51,32 @@
 //This means that variable types are determined at runtime, 
 //and you do not need to explicitly declare the type of a variable before using it.
 // You can assign different types of values to a variable during its lifetime.
+
+
+
+// ++++++++++++++++++++++++++ Memory +++++++++++++++++++++++
+
+// Stack (Primitive)--> get copy of variable.
+
+//   let myname="DEV JAISWAL"
+//   let anothername=myname   // assigned a copy of myname variable not original.
+
+//   anothername="lakhan jaiswal"
+//   console.log(myname);
+//   console.log(anothername);
+
+// Heap (Non-primitive)--> get reference of variable.
     
+//    let userOne={
+//      email: "jaiswaldev479@gmail.com",
+//      upi: "jaiswaldev479@axl"
+//    }
+//    let userTwo = userOne   // assigned a reference of userOne variable, bcz it is in heap. that's why email of both users is updated.
+//    userTwo.email="jaiswaldev955@gmail.com"  
+
+//    console.log(userOne.email);
+//    console.log(userTwo.email);
+     
 
 
 
