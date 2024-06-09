@@ -32,7 +32,7 @@
 
 //2) Reference. (call by memory)-----> Arrays, Objects, Functions.
 
-// let heros=[ "Dev jaiswal" , 123] //Array
+// let heros=[ "Dev jaiswal" , 123] //Array--> also it can be collection of different datatypes.
 // console.log(typeof heros); //object.
 
 // let myobj={
