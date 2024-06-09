@@ -18,7 +18,7 @@ const balance= new Number(20.30340646)    // this is strictly a number. there is
 
 // console.log(Math.abs(-79));
 //there are many functions in Math library u can try out in Inspect window.
-// console.log(Math.random());  //generate random value b/w 0 to 1.
+//***  console.log(Math.random());  //generate random value b/w 0 to 1.
 
 // console.log(Math.ceil(Math.random()*6)); //now generate b/w 1 to 6.
 
