@@ -12,7 +12,8 @@ const repocount= 3
 //  console.log(gamename.__proto__);
 //  console.log(gamename.length);  // lenght of string.
 //  console.log(gamename.toUpperCase());  // convert complete string into uppercase. but original variable is same as before it convert copy of that variable.
-//  console.log(gamename.charAt(2));
+//  console.log(gamename.charAt(2));  //this does'nt allow negative value as parameter.
+//  console.log(gamename.at(-3));    //this allows negative value. means if argument is negative then iteration starts from end of the string.
 //  console.log(gamename.indexOf('t'));    // -1 bcz 't' is not in given string.
 
 // const newstring = gamename.substring(3,4)  //4 not included. and cannot give negative value it means reading from back of the string is not allowed.
@@ -34,6 +35,13 @@ const repocount= 3
 
 
 // console.log(url.includes('%20'))   // it gives simple true/false. given argument is present or not.
+
+// console.log(gamename.anchor("Dev"));  // this creats anchor tag. generally not used.
+//console.log(gamename.big());         
+//console.log(gamename.blink()); 
+// console.log(gamename.bold());   
+
+// console.log(gamename.charCodeAt(40));  //this gives ascii value of char at given argument. if argument is not b/w 0 to length of string then output is NaN.
 
 
 
