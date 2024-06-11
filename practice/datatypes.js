@@ -66,10 +66,10 @@ typeof(accountemail);  // use to know the type of variable.
 
 // console.log(str1+str2);
 
-// console.log("1"+2);
-// console.log(1+ "2");
-// console.log(1+2+"3");  //number is priority.
-// console.log("1"+2+3);  //string is priority.
+console.log("1"+2);  //12
+console.log(1+ "2");  //12
+console.log(1+2+"3"); //33
+console.log("1"+2+3);  //string is priority. //123.
 
 // console.log(3+4*5%4); //try to don't mess with code with this type of stuff. use prenthesis properly. this written statement is not wrong but companies want clear& clean and readable code so.
 
