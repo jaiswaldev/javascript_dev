@@ -11,7 +11,7 @@ const user={
 // user.username="lakhan"
 // user.welcomemessage()
 
-// console.log(this);   // this will give empty object bcz we are in node enviroment and in our envirment currently there is no globally context. if we are in browser then this will give different output (non empty object).
+// console.log(this);   // this will give empty object bcz we are in node enviroment and in our envirment currently there is no globally context. if we are in browser then this will give different output (non empty window object).
 
 // function chai(){
 //     let username="dev"
