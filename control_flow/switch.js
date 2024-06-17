@@ -47,6 +47,6 @@ let val
 
 
 // Ternary operator.
-condition ? true: false
+// condition ? true: false;
 
  
