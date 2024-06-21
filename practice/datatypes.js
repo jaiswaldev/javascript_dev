@@ -19,10 +19,10 @@ typeof(accountemail);  // use to know the type of variable.
 // console.log(typeof(undefined))  // undefined.
 
 
-// let score= "44tyy"
+let score= "44tyy"
 // console.log(typeof(score)) 
 
-// let value= Number(score)
+let value= Number(score)
 // console.log(typeof(value)) 
 // console.log(value)
 
