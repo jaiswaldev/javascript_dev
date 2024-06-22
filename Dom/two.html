@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <div class="languege">
+        <li>javascript</li>
+        <li>cpp</li>
+        <li>css</li>
+    </div>
+</body>
+<script>
+     function addlist(lang){
+        const list = document.createElement('li') 
+        list.innerText=`${lang}`
+        document.querySelector('.languege').appendChild(list)
+    }
+
+    // addlist("ruby")
+
+    function addlistoptimal(lang){
+        const list = document.createElement('li') 
+        list.appendChild(document.createTextNode(lang))
+        document.querySelector('.languege').appendChild(list)
+    }
+
+    // addlistoptimal("rust")
+
+    //Edit.
+    const list=document.querySelector("li:nth-child(3)")
+    // list.innerText="Mojo"
+    const newli=document.createElement('li')
+    newli.textContent="mojo"
+    list.replaceWith(newli)
+
+    const firstlang=document.querySelector("li:first-child")
+    firstlang.outerHTML="<li>typescript</li>"
+
+    //remove.
+    const lang=document.querySelector('li:last-child')
+    lang.remove()
+   
+
+</script>
+</html>
