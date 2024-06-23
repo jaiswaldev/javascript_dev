@@ -14,14 +14,14 @@ input{
     height: 40px;
     width: 300px;
 }
-form{
-   
-    gap: 30px;
-    margin: 20px;
-}
 
-button{
+
+#submit{
     height: 30px;
     width: 100px;
     margin-top: 40px;
+}
+#restart{
+    height: 30px;
+    width: 100px;
 }
