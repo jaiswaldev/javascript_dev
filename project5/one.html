@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer 3.O</title>
+</head>
+<style>
+    .btns{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+</style>
+<body>
+    <div class="btns">
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+    </div>
+</body>
+<script>
+    function randomcolor(){
+        let red = Math.floor(Math.random() * 255 )+1
+        let green = Math.floor(Math.random() * 255 )+1
+        let blue = Math.floor(Math.random() * 255 )+1
+
+        return `rgb(${red},${green},${blue})`
+    }
+    let intervalid
+    document.querySelector('#start').addEventListener('click',()=>{
+        if(intervalid==null){
+       intervalid=setInterval(()=>{
+           document.body.style.backgroundColor= randomcolor()
+       },1000)
+    }
+    },false)
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearInterval(intervalid)
+        intervalid=null
+    })
+</script>
+</html>
