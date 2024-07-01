@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+        .card{
+            display: flex;
+        }
+        .detail{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body style="background-color: white;">
+    <div class="card ">
+        <div class="avatar"></div>
+        <div class="detail"></div>
+    </div>
+    <button id="btn">Get card</button>
+</body>
+<script>
+   const requesturl= 'https://api.github.com/users/hiteshchoudhary'
+   const xhr= new XMLHttpRequest()
+   xhr.open('GET', requesturl)
+   let data;
+   let img_url;
+   let number;
+   xhr.onreadystatechange = function(){
+      if(xhr.readyState === 4){
+        data = JSON.parse(this.responseText)                 // jab bhi url se response aata hai vo string ke form mei hi ata hai. so first we need to change in  json object to excess data of given url.
+        img_url = data.avatar_url;
+        number= data.followers;
+       }
+   }
+   xhr.send();
+   document.querySelector('#btn').addEventListener('click', ()=>{
+        const image = document.createElement('img');
+        const img_container = document.querySelector('.avatar') 
+        image.src=img_url;
+        image.alt="Hitesh";
+        image.width= 200
+        img_container.appendChild(image);
+        const fol= document.createElement('h2')
+        fol.innerHTML= 'Followers'
+        const count = document.createElement('div');
+        count.innerHTML = `${number}`;
+        const det_container= document.querySelector('.detail')
+        det_container.appendChild(fol);
+        det_container.appendChild(count);
+   })
+
+</script>
+</html>
