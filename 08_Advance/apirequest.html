@@ -38,7 +38,7 @@
    let number;
    xhr.onreadystatechange = function(){
       if(xhr.readyState === 4){
-        data = JSON.parse(this.responseText)                 // jab bhi url se response aata hai vo string ke form mei hi ata hai. so first we need to change in  json object to excess data of given url.
+        data = JSON.parse(this.responseText)  // jab bhi url se response aata hai vo string ke form mei hi ata hai. so first we need to change in  json object to excess data of given url.
         img_url = data.avatar_url;
         number= data.followers;
        }
