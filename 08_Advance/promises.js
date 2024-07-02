@@ -52,19 +52,49 @@
 // })
 
 
-const promiseFive= new Promise(function(resolve, reject){
-    setTimeout(function(){
-        let error= false
-        if(!error){
-          resolve({username: 'dev', password: '2454'})
-        } else{
-          reject('JS went wrong')
-        }
-      },1000)
-});
+// const promiseFive= new Promise(function(resolve, reject){
+//     setTimeout(function(){
+//         let error = false
+//         if(!error){
+//           resolve({username: 'dev', password: '2454'})
+//         } else{
+//           reject('JS went wrong')
+//         }
+//       },1000)
+// });
 
 
-async function consumePromisFive(){      // this can't handle errors directly.
-    const response = await promiseFive;
-    console.log(response);
-}
+// async function consumePromisFive(){      // this can't handle errors directly. so we have to rap in try and catch block.
+//    try {
+//     const response = await promiseFive;
+//     console.log(response);
+//    } 
+//    catch (error) {
+//     console.log(error);
+//    }
+// }
+// consumePromisFive()
+
+
+// async function getuserdetails(){
+//    try{
+//     const response=await fetch('https://randomuser.me/api/')
+//     const data= await response.json()
+//     console.log(data);
+//    }
+//    catch(error){
+//       console.log("E:",error);
+//    }
+// }
+
+// getuserdetails()
+
+fetch('https://randomuser.me/api/').then((response)=>{
+   return response.json()
+})
+.then((data)=>{
+  console.log(data);
+})
+.catch((error)=>{
+   console.log(error);
+})
